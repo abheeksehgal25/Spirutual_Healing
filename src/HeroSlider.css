@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+.animate-fade-in-up-delay {
+  animation: fade-in-up 1s cubic-bezier(0.4, 0, 0.2, 1) 0.4s both;
+}
+.animate-fade-in-up-delay2 {
+  animation: fade-in-up 1s cubic-bezier(0.4, 0, 0.2, 1) 0.7s both;
+}
+.animate-fade-in-up-delay3 {
+  animation: fade-in-up 1s cubic-bezier(0.4, 0, 0.2, 1) 1s both;
+}
+.animate-fade-in-up-delay4 {
+  animation: fade-in-up 1s cubic-bezier(0.4, 0, 0.2, 1) 1.3s both;
+}
+.animate-fade-in-up-delay5 {
+  animation: fade-in-up 1s cubic-bezier(0.4, 0, 0.2, 1) 1.6s both;
+}
+
+.animate-fade-in-down {
+  animation: fade-in-down 1s cubic-bezier(0.4, 0, 0.2, 1) both;
+} 

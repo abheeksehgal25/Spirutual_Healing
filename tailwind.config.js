@@ -19,6 +19,8 @@ export default {
         dark: '#2c3a4b',
         lightBackground: '#e7e0f0',
         cardBackground: '#FCFAEC',
+        servicesHeading: '#1a3a60',
+        servicesUnderline: '#8a4a4a',
         purple: {
           50: '#f8f5fa',
           100: '#ede7f6',

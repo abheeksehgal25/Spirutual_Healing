@@ -17,6 +17,7 @@ export default {
         background: '#f8f5fa',
         navbar: '#f6efe1',
         dark: '#2c3a4b',
+        lightBackground: '#e7e0f0',
         purple: {
           50: '#f8f5fa',
           100: '#ede7f6',

@@ -5,6 +5,7 @@ import first from './images/Resource_1.png';
 import second from './images/Resource_2.png';
 import third from './images/Recource_3.png';
 import small_one from './images/Resource_4.png';
+import bgPattern from './images/background.png';
 
 export default function Resources() {
   const cards = [
@@ -64,20 +65,31 @@ export default function Resources() {
   };
 
   return (
-    <section className="py-12 bg-background">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="py-12 bg-lightBackground relative overflow-hidden min-h-screen">
+      {/* Background pattern image */}
+      <img
+        src={bgPattern}
+        alt="Background pattern"
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-70 pointer-events-none"
+      />
+
+      {/* Heading Section */}
+      <div className="w-full text-center mb-8 relative z-10">
         <motion.h2 
-          className="text-center mb-4 text-primary font-montserrat font-semibold text-3xl md:text-4xl relative inline-block after:content-[''] after:absolute after:bottom-[-10px] after:left-1/2 after:-translate-x-1/2 after:w-[50px] after:h-[3px] after:bg-primary after:rounded mt-10"
+          className="text-primary font-montserrat font-semibold text-3xl md:text-4xl relative inline-block after:content-[''] after:absolute after:bottom-[-10px] after:left-1/2 after:-translate-x-1/2 after:w-[50px] after:h-[3px] after:bg-primary after:rounded"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
           Spiritual Resources
         </motion.h2>
-        
+      </div>
 
+      {/* Main Content Area: Side Images + Cards */}
+      <div className="flex items-start justify-center w-full relative z-10">
+        {/* Cards Container */}
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 flex-grow px-4"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -93,7 +105,7 @@ export default function Resources() {
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
               >
                 <div className='relative overflow-hidden rounded-t-xl'>
-                  <img src={card.img} className="w-full h-40 object-cover" alt={card.title} />
+                  <img src={card.img} className="w-full h-32 object-cover" alt={card.title} />
                   <span className="absolute top-2 right-2 bg-primary text-white px-3 py-1 rounded-full text-xs">{card.category}</span>
                 </div>
                 <div className="p-2 text-start">
@@ -118,9 +130,12 @@ export default function Resources() {
             </motion.div>
           ))}
         </motion.div>
+      </div>
 
+      {/* Button Section */}
+      <div className="w-full text-center mt-8 relative z-10">
         <motion.button 
-          className="bg-dark text-white px-8 py-3 rounded-lg hover:bg-primary transition-colors duration-300 mt-8"
+          className="bg-dark text-white px-8 py-3 rounded-lg hover:bg-primary transition-colors duration-300"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >

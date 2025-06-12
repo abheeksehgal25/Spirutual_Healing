@@ -18,6 +18,7 @@ export default {
         navbar: '#f6efe1',
         dark: '#2c3a4b',
         lightBackground: '#e7e0f0',
+        cardBackground: '#FCFAEC',
         purple: {
           50: '#f8f5fa',
           100: '#ede7f6',
@@ -34,9 +35,11 @@ export default {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
+        greatVibes: ['Great Vibes', 'cursive'],
       },
       boxShadow: {
         'soft': '0 4px 24px 0 rgba(124, 77, 123, 0.08)',
+        'card': '0 2px 10px rgba(0, 0, 0, 0.05)',
       },
     },
   },

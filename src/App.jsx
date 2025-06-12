@@ -11,9 +11,6 @@ function Home() {
   return (
     <>
       <HeroSlider />
-      <Services />
-      <Resources />
-      <Innerpeace />
     </>
   );
 }

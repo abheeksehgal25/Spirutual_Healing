@@ -31,8 +31,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
-        heading: ['Montserrat', 'ui-sans-serif', 'system-ui'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
       boxShadow: {
         'soft': '0 4px 24px 0 rgba(124, 77, 123, 0.08)',

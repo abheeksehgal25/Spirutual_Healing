@@ -3,9 +3,19 @@ import './App.css'
 import Navbar from "./Navbar"
 import HeroSlider from "./HeroSlider"
 import AboutUs from "./AboutUs"
+import Services from "./Services"
+import Resources from "./Resources"
+import Innerpeace from "./Innerpeace"
 
 function Home() {
-  return <HeroSlider />;
+  return (
+    <>
+      <HeroSlider />
+      <Services />
+      <Resources />
+      <Innerpeace />
+    </>
+  );
 }
 
 export default function App() {
@@ -16,6 +26,9 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/inner-peace" element={<Innerpeace />} />
         </Routes>
       </div>
     </Router>

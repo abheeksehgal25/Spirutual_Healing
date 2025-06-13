@@ -1,11 +1,11 @@
-import './App.css';
+import '../App.css';
 import { FaArrowRight, FaRegCalendarAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';  
-import first from './images/Resource_1.png';
-import second from './images/Resource_2.png';
-import third from './images/Recource_3.png';
-import small_one from './images/Resource_4.png';
-import bgPattern from './images/background.png';
+import first from '../images/Resource_1.png';
+import second from '../images/Resource_2.png';
+import third from '../images/Recource_3.png';
+import small_one from '../images/Resource_4.png';
+import bgPattern from '../images/background.png';
 
 export default function Resources() {
   const cards = [
@@ -65,7 +65,7 @@ export default function Resources() {
   };
 
   return (
-    <section className="py-12 bg-lightBackground relative overflow-hidden min-h-screen">
+    <section id="resources" className="py-12 bg-lightBackground relative overflow-hidden min-h-screen">
       {/* Background pattern image */}
       <img
         src={bgPattern}

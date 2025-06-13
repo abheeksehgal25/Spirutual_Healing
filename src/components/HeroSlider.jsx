@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
-import firstImg from "./images/first.jpg";
-import secondImg from "./images/second.jpg";
-import thirdImg from "./images/third.jpg";
+import firstImg from "../images/first.jpg";
+import secondImg from "../images/second.jpg";
+import thirdImg from "../images/third.jpg";
 
 const images = [firstImg, secondImg, thirdImg];
 
@@ -42,7 +42,7 @@ export default function HeroSlider() {
   });
 
   return (
-    <div className="relative w-full h-screen overflow-hidden m-0 p-0 bg-background font-poppins">
+    <div id="home" className="relative w-full h-screen overflow-hidden m-0 p-0 bg-background font-poppins">
       {/* Slider Track */}
       <motion.div
         className="flex h-full"

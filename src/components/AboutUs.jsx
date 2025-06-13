@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import bgPattern from "./images/background.png";
-import bigOne from "./images/big_one.jpg";
-import smallOne from "./images/small_one.jpg";
-import NumerologyIcon from "./images/Numerology.png";
-import SelfHealingIcon from "./images/Self_Healing.png";
-import YogaIcon from "./images/Yoga.png";
-import InnerAwakeningIcon from "./images/Inner_awakening.png";
-import InnerAwakening2Icon from "./images/Inner_awakenin_2.png";
+import bgPattern from "../images/background.png";
+import bigOne from "../images/big_one.jpg";
+import smallOne from "../images/small_one.jpg";
+import NumerologyIcon from "../images/Numerology.png";
+import SelfHealingIcon from "../images/Self_Healing.png";
+import YogaIcon from "../images/Yoga.png";
+import InnerAwakeningIcon from "../images/Inner_awakening.png";
+import InnerAwakening2Icon from "../images/Inner_awakenin_2.png";
 
 const icons = [
   { src: NumerologyIcon, label: "Numerology" },

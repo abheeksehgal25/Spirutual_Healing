@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
-import yogaImg from './images/yoga.jpg'; // Placeholder for new images
-import tarotImg from './images/tarot.jpg'; // Placeholder for new images
-import numerologyImg from './images/numerology_2.png'; // Placeholder for new images
-import spiritualHealingImg from './images/spiritual_healing.jpg'; // Placeholder for new images
+import yogaImg from '../images/yoga.jpg'; // Placeholder for new images
+import tarotImg from '../images/tarot.jpg'; // Placeholder for new images
+import numerologyImg from '../images/numerology_2.png'; // Placeholder for new images
+import spiritualHealingImg from '../images/spiritual_healing.jpg'; // Placeholder for new images
 
 export default function Services() {
   const servicesData = [
@@ -46,7 +46,7 @@ export default function Services() {
   };
 
   return (
-    <section className="bg-white py-12">
+    <section id="services" className="bg-white py-12">
       <div className="max-w-screen-xl mx-auto px-4">
         <motion.h2 
           className="text-center mb-8 font-greatVibes text-servicesHeading text-6xl md:text-7xl relative inline-block after:content-[''] after:absolute after:bottom-[-10px] after:left-1/2 after:-translate-x-1/2 after:w-[60px] after:h-[3px] after:bg-servicesUnderline after:rounded"

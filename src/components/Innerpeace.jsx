@@ -1,6 +1,6 @@
-import './App.css';
+import '../App.css';
 import { motion } from 'framer-motion';
-import personImage from './images/big_one.jpg';
+import personImage from '../images/big_one.jpg';
 
 export default function Innerpeace() {
   const cards = [
@@ -46,7 +46,7 @@ export default function Innerpeace() {
   };
 
   return (
-    <section className="py-12 text-center bg-background">
+    <section id="inner-peace" className="py-12 text-center bg-background">
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2 
           className="mb-6 font-greatVibes text-gray-600 text-6xl md:text-7xl relative inline-block"

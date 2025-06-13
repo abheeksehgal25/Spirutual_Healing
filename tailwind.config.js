@@ -21,6 +21,7 @@ export default {
         cardBackground: '#FCFAEC',
         servicesHeading: '#1a3a60',
         servicesUnderline: '#8a4a4a',
+        eventCardBackground: '#d0f0ef',
         purple: {
           50: '#f8f5fa',
           100: '#ede7f6',

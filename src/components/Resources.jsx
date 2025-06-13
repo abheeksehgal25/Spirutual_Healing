@@ -1,5 +1,5 @@
 import '../App.css';
-import { FaArrowRight, FaRegCalendarAlt } from 'react-icons/fa';
+import { FaArrowRight, FaMapMarkerAlt  } from 'react-icons/fa';
 import { motion } from 'framer-motion'; // eslint-disable-line no-unused-vars
 import first from '../images/Resource_1.png';
 import second from '../images/Resource_2.png';
@@ -15,7 +15,7 @@ export default function Resources() {
       img: first,
       date: 'May 15, 2023',
       time: '8 min read',
-      category: 'Mindfulness'
+      
     },
     {
       title: 'Understanding Your Chakras',
@@ -23,7 +23,7 @@ export default function Resources() {
       img: second,
       date: 'April 22, 2023',
       time: '12 min read',
-      category: 'Energy Healing'
+      
     },
     {
       title: 'Tarot for Beginners',
@@ -31,7 +31,7 @@ export default function Resources() {
       img: third,
       date: 'February 5, 2023',
       time: '15 min read',
-      category: 'Divination'
+      
     },
     {
       title: 'The Healing Power of Nature',
@@ -39,7 +39,7 @@ export default function Resources() {
       img: small_one,
       date: 'March 10, 2023',
       time: '10 min read',
-      category: 'Nature'
+      
     },
   ];
 
@@ -109,25 +109,25 @@ export default function Resources() {
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
               >
                 <div className='relative overflow-hidden rounded-t-xl'>
-                  <img src={card.img} className="w-full h-32 object-cover" alt={card.title} />
-                  <span className="absolute top-2 right-2 bg-primary text-white px-3 py-1 rounded-full text-xs">{card.category}</span>
+                  <img src={card.img} className="w-full h-48 object-cover" alt={card.title} />
+              
                 </div>
                 <div className="p-2 text-start">
-                  <h5 className="text-xl font-semibold mb-2">{card.title}</h5>
-                  <p className="text-gray-700">{card.desc}</p>
+                  <h5 className="font-urbanist font-bold text-[18px] leading-[21.33px] tracking-normal align-middle text-[#0655A0] mb-2">{card.title}</h5>
+                  <p className= "font-urbanist font-normal text-[12.19px] leading-[18.29px] tracking-normal align-middle text-[#355070]">{card.desc}</p>
                 </div>
                 <div className="mt-auto p-2 text-start">
-                  <div className="flex items-center text-gray-500 text-sm">
-                    <FaRegCalendarAlt className="mr-1" />
+                  <div className="flex items-center text-[#6B7280] font-['Font_1'] font-normal text-[10.67px] leading-[15.24px] tracking-normal align-middle">
+                    <FaMapMarkerAlt  className="mr-1" />
                     <small>{card.date} • {card.time}</small>
                   </div>
                   <motion.a 
                     href="#" 
-                    className="text-primary font-medium transition-colors duration-300 hover:text-secondary flex items-center text-sm"
+                    className="text-[#B56576] font-['Font_1'] font-medium text-[12.19px] leading-[18.29px] tracking-normal align-middle transition-colors duration-300 hover:text-secondary flex items-center text-sm"
                     whileHover={{ x: 5 }}
                   >
                     Read Article
-                    <FaArrowRight className="ml-2 text-primary" />
+                    <FaArrowRight className="ml-2 text-[#B56576]" />
                   </motion.a>
                 </div>
               </motion.div>

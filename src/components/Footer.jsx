@@ -3,11 +3,11 @@ import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-[#FFFDF9] text-[#6D597A] py-12">
-      <div className="container px-8 flex flex-col md:flex-row md:justify-between md:items-start border-b border-gray-600 pb-8 mb-8">
+    <footer id="contact" className="bg-[#FFFDF9] text-[#0655A0] py-12">
+      <div className="ml-15 px-8 flex flex-col md:flex-row md:justify-between md:items-start border-b border-gray-600 pb-8 mb-8 ">
         {/* Spiritual Section */}
         <div className="mb-8 md:mb-0 w-full text-left md:text-left footer-section-mobile-left">
-          <h4 className="text-lg font-semibold text-[#6D597A] mb-4">Spiritual</h4>
+          <h4 className="text-lg font-semibold text-[#0655A0] mb-4">Spiritual</h4>
           <ul>
             <li className="mb-2"><a href="#/about" className="hover:text-black">About us</a></li>
             <li className="mb-2"><a href="#" className="hover:text-black">Join us</a></li>
@@ -19,7 +19,7 @@ const Footer = () => {
 
         {/* Explore Section */}
         <div className="mb-8 md:mb-0 w-full text-left md:text-left footer-section-mobile-left">
-          <h4 className="text-lg font-semibold text-[#6D597A] mb-4">Explore</h4>
+          <h4 className="text-lg font-semibold text-[#0655A0] mb-4">Explore</h4>
           <ul>
             <li className="mb-2"><a href="#" className="hover:text-black">TEXT HERE</a></li>
             <li className="mb-2"><a href="#" className="hover:text-black">TEXT HERE</a></li>
@@ -31,7 +31,7 @@ const Footer = () => {
 
         {/* Resources Section */}
         <div className="mb-8 md:mb-0 w-full text-left md:text-left footer-section-mobile-left">
-          <h4 className="text-lg font-semibold text-[#6D597A] mb-4">Resources</h4>
+          <h4 className="text-lg font-semibold text-[#0655A0] mb-4">Resources</h4>
           <ul>
             <li className="mb-2"><a href="#" className="hover:text-black">TEXT HERE</a></li>
             <li className="mb-2"><a href="#" className="hover:text-black">TEXT HERE</a></li>
@@ -43,7 +43,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright and Social Media */}
-      <div className="container px-8 flex flex-col md:flex-row justify-center md:justify-between items-center text-sm">
+      <div className="container px-8 flex flex-col md:flex-row justify-center md:justify-between text-sm">
         <div className="text-left md:text-left mb-4 md:mb-0">
           <p className="mb-1">Developed by House of Marktech</p>
           <p>&copy; 2025 Nyouuta. All rights reserved.</p>

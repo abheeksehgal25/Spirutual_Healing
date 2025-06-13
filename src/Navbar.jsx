@@ -48,7 +48,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-primary hover:text-secondary focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-[#0655A0] hover:text-[#0625a0] focus:outline-none"
               aria-label="Toggle menu"
             >
               <svg

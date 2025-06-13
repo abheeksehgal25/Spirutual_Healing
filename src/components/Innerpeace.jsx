@@ -1,6 +1,6 @@
 import '../App.css';
 import { motion } from 'framer-motion'; // eslint-disable-next-line no-unused-vars
-import personImage from '../images/big_one.jpg';
+import personImage from '../images/sample.jpg';
 
 export default function Innerpeace() {
   const cards = [
@@ -57,7 +57,7 @@ export default function Innerpeace() {
           People finding inner peace
         </motion.h2>
         <motion.p 
-          className="text-gray-600 mb-8 text-lg md:text-xl mt-5"
+          className="text-[#565656] font-polysans italic font-light text-[20px] leading-[48px] tracking-[-0.38px] text-center align-middle mb-8  md:text-xl mt-5"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
@@ -77,21 +77,23 @@ export default function Innerpeace() {
               key={idx}
               variants={itemVariants}
             >
-              <div className="bg-cardBackground text-center shadow-card px-6 py-8 rounded-t-xl rounded-b-full overflow-hidden relative flex flex-col justify-between">
-                
-                <div className="mb-4">
-                  <p className="text-gray-700 text-base leading-relaxed">{card.desc}</p>
-                </div>
-
-                <div className="flex flex-col items-center justify-center gap-3 mt-auto w-full">
-                  <img 
-                    src={card.img} 
-                    alt={card.name} 
-                    className="rounded-full border-4 border-primary p-0.5 w-20 h-20 object-cover mb-2" 
-                  />
-                  <div className="text-center">
-                    <h6 className="font-semibold text-xl mb-0 text-dark">{card.name}</h6>
-                    <small className="text-gray-500 font-medium text-base">{card.position}</small>
+              <div className="shadow-card rounded-t-xl relative p-2">
+                <div className={`rounded-t-xl rounded-b-full w-full h-full flex flex-col justify-start items-center text-center min-h-[450px] gap-y-4 ${idx % 2 === 0 ? 'bg-[#E5D09A]' : 'bg-[#F6D1CC]'}`}>
+                  {/* Profile and Name/Position */}
+                  <div className="flex items-center justify-center pt-8">
+                    <img 
+                      src={card.img} 
+                      alt={card.name} 
+                      className="rounded-full p-0.5 w-20 h-20 object-cover mr-4" 
+                    />
+                    <div className="text-left">
+                      <h6 className="font-semibold text-xl text-dark">{card.name}</h6>
+                      <small className="text-gray-500 font-medium text-base">{card.position}</small>
+                    </div>
+                  </div>
+                  {/* Description */}
+                  <div className="px-6">
+                    <p className="text-gray-700 text-base leading-relaxed text-center">{card.desc}</p>
                   </div>
                 </div>
               </div>

@@ -37,7 +37,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-lg font-semibold text-[#0655A0] hover:text-[#0625a0] transition-colors duration-200 px-2 py-1 rounded font-heading"
+                className="font-urbanist font-medium text-[16px] leading-[24px] tracking-normal align-middle text-lg text-[#0655A0] hover:text-[#0625a0] transition-colors duration-200 px-2 py-1 rounded font-heading"
                 aria-current={link.name === "Home" ? "page" : undefined}
               >
                 {link.name}

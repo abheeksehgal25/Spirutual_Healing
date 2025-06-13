@@ -77,14 +77,14 @@ export default function AboutUs() {
           <div className="flex-1 flex flex-col items-center md:items-start">
             {/* Subtitle */}
             <motion.p 
-              className="text-xl md:text-2xl text-dark mb-4 text-center md:text-left font-semibold"
+              className="font-urbanist font-normal text-[24px] leading-[27px] tracking-normal align-middle text-xl md:text-2xl mb-4 text-center md:text-left text-[#355070]"
               variants={fadeInVariants}
             >
               A sacred space for healing, self-discovery, and inner awakening.
             </motion.p>
             {/* Description */}
             <motion.p 
-              className="text-lg md:text-xl text-dark mb-8 text-center md:text-left max-w-xl"
+              className="font-urbanist font-normal text-[16.38px] leading-[24px] tracking-normal align-middle text-[#355070] mb-8 text-center md:text-left max-w-xl"
               variants={fadeInVariants}
             >
               My approach blends the ancient wisdom of yoga therapy with spiritual tools such as Tarot reading, Numerology, and intuitive guidance to support transformation on all levels—body, mind, and soul.
@@ -99,13 +99,13 @@ export default function AboutUs() {
                   <div className="w-20 h-20 rounded-full flex items-center justify-center mb-2 bg-white shadow-soft">
                     <img src={icon.src} alt={icon.label} className="w-14 h-14 object-contain" />
                   </div>
-                  <span className="text-base text-primary font-semibold text-center">{icon.label}</span>
+                  <span className="text-base text-[#355070] font-semibold text-center">{icon.label}</span>
                 </motion.div>
               ))}
             </motion.div>
             {/* Button */}
             <motion.button 
-              className="bg-[#0655A0] text-white px-8 py-3 rounded shadow-soft hover:bg-primary transition text-lg font-semibold"
+              className="bg-[#0655A0] text-white px-8 py-3 rounded shadow-soft hover:bg-blue-800 transition text-lg font-semibold"
               variants={fadeInVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

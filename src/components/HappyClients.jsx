@@ -10,29 +10,29 @@ const HappyClients = () => {
           <span className="mt-5 block h-1 w-28 bg-secondary rounded mx-auto mb-2" />
         </h3>
 
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="mt-5 flex flex-wrap justify-center gap-8">
           {/* Card 1 */}
-          <div className="bg-white p-8 rounded-lg shadow-lg text-center w-64 h-64 flex flex-col justify-center items-center">
-            <p className="font-bold text-5xl text-[#565656]">0000+</p>
-            <p className="text-xl text-gray-700 mt-2">Counselling</p>
+          <div className="bg-white p-8 rounded-lg shadow-lg text-center w-80 h-64 flex flex-col justify-center items-center">
+            <p className="font-urbanist font-normal text-[56px] leading-[56px] tracking-[0.38px] text-center align-middle text-[#565656]">0000+</p>
+            <p className="font-urbanist font-normal text-[32px] leading-[56px] tracking-[0.38px] text-center align-middle text-[#565656] mt-2">Counselling</p>
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white p-8 rounded-lg shadow-lg text-center w-64 h-64 flex flex-col justify-center items-center">
-            <p className="font-bold text-5xl text-[#565656]">0000+</p>
-            <p className="text-xl text-gray-700 mt-2">Trainings</p>
+          <div className="bg-white p-8 rounded-lg shadow-lg text-center w-80 h-64 flex flex-col justify-center items-center">
+          <p className="font-urbanist font-normal text-[56px] leading-[56px] tracking-[0.38px] text-center align-middle text-[#565656]">0000+</p>
+          <p className="font-urbanist font-normal text-[32px] leading-[56px] tracking-[0.38px] text-center align-middle text-[#565656] mt-2">Trainings</p>
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white p-8 rounded-lg shadow-lg text-center w-64 h-64 flex flex-col justify-center items-center">
-            <p className="font-bold text-5xl text-[#565656]">0000+</p>
-            <p className="text-xl text-gray-700 mt-2">Satisfied Clients</p>
+          <div className="bg-white p-8 rounded-lg shadow-lg  w-81 h-64 flex flex-col justify-center items-center">
+          <p className="font-urbanist font-normal text-[56px] leading-[56px] tracking-[0.38px] text-center align-middle text-[#565656]">0000+</p>
+          <p className="font-urbanist font-normal text-[32px] leading-[56px] tracking-[0.38px] text-[#565656] mt-2">Satisfied Clients</p>
           </div>
 
           {/* Card 4 */}
-          <div className="bg-white p-8 rounded-lg shadow-lg text-center w-64 h-64 flex flex-col justify-center items-center">
-            <p className="font-bold text-5xl text-[#565656]">0000+</p>
-            <p className="text-xl text-gray-700 mt-2">Camps</p>
+          <div className="bg-white p-8 rounded-lg shadow-lg text-center w-80 h-64 flex flex-col justify-center items-center">
+          <p className="font-urbanist font-normal text-[56px] leading-[56px] tracking-[0.38px] text-center align-middle text-[#565656]">0000+</p>
+          <p className="font-urbanist font-normal text-[32px] leading-[56px] tracking-[0.38px] text-center align-middle text-[#565656] mt-2">Camps</p>
           </div>
         </div>
       </div>

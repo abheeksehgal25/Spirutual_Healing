@@ -139,7 +139,7 @@ export default function Resources() {
       {/* Button Section */}
       <div className="w-full text-center mt-8 relative z-10">
         <motion.button 
-          className="bg-dark text-white px-8 py-3 rounded-lg hover:bg-primary transition-colors duration-300"
+          className="bg-[#0655A0] text-white px-8 py-3 rounded-lg hover:bg-primary transition-colors duration-300"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >

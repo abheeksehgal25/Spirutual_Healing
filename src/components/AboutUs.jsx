@@ -105,7 +105,7 @@ export default function AboutUs() {
             </motion.div>
             {/* Button */}
             <motion.button 
-              className="bg-accent text-white px-8 py-3 rounded shadow-soft hover:bg-primary transition text-lg font-semibold"
+              className="bg-[#0655A0] text-white px-8 py-3 rounded shadow-soft hover:bg-primary transition text-lg font-semibold"
               variants={fadeInVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

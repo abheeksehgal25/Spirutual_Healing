@@ -98,7 +98,7 @@ export default function HeroSlider() {
           >
             <a
               href="#services"
-              className="bg-accent text-white px-6 py-2 rounded shadow-soft hover:bg-primary transition font-montserrat"
+              className="bg-[#0655A0] text-white px-6 py-2 rounded shadow-soft hover:bg-primary transition font-montserrat"
             >
               Explore Services
             </a>

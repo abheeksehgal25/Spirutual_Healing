@@ -1,5 +1,5 @@
 import '../App.css';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'; // eslint-disable-next-line no-unused-vars
 import personImage from '../images/big_one.jpg';
 
 export default function Innerpeace() {
@@ -49,7 +49,7 @@ export default function Innerpeace() {
     <section id="inner-peace" className="py-12 text-center bg-background">
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2 
-          className="mb-6 font-greatVibes text-gray-600 text-6xl md:text-7xl relative inline-block"
+          className="text-center font-bold font-playfair-display italic text-5xl text-blue-800 mb-2"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -57,7 +57,7 @@ export default function Innerpeace() {
           People finding inner peace
         </motion.h2>
         <motion.p 
-          className="text-gray-600 mb-8 text-lg md:text-xl"
+          className="text-gray-600 mb-8 text-lg md:text-xl mt-5"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}

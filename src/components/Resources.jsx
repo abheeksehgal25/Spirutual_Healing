@@ -1,11 +1,11 @@
 import '../App.css';
 import { FaArrowRight, FaRegCalendarAlt } from 'react-icons/fa';
-import { motion } from 'framer-motion';  
+import { motion } from 'framer-motion'; // eslint-disable-line no-unused-vars
 import first from '../images/Resource_1.png';
 import second from '../images/Resource_2.png';
 import third from '../images/Recource_3.png';
 import small_one from '../images/Resource_4.png';
-import bgPattern from '../images/background.png';
+import bgPattern from '../images/background.jpg';
 
 export default function Resources() {
   const cards = [
@@ -76,13 +76,17 @@ export default function Resources() {
       {/* Heading Section */}
       <div className="w-full text-center mb-8 relative z-10">
         <motion.h2 
-          className="text-primary font-montserrat font-semibold text-3xl md:text-4xl relative inline-block after:content-[''] after:absolute after:bottom-[-10px] after:left-1/2 after:-translate-x-1/2 after:w-[50px] after:h-[3px] after:bg-primary after:rounded"
+          className="text-center font-bold font-playfair-display italic text-5xl text-blue-800 mb-2"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
           Spiritual Resources
         </motion.h2>
+        <h3 className="text-center font-bold font-playfair-display text-5xl text-blue-800 mt-2 mb-12 relative">
+          
+          <span className="mt-5 block h-1 w-28 bg-secondary rounded mx-auto mb-2" />
+        </h3>
       </div>
 
       {/* Main Content Area: Side Images + Cards */}

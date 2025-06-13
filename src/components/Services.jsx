@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'; // eslint-disable-next-line no-unused-vars
 import yogaImg from '../images/yoga.jpg'; // Placeholder for new images
 import tarotImg from '../images/tarot.jpg'; // Placeholder for new images
 import numerologyImg from '../images/numerology_2.png'; // Placeholder for new images
@@ -49,13 +49,17 @@ export default function Services() {
     <section id="services" className="bg-white py-12">
       <div className="max-w-screen-xl mx-auto px-4">
         <motion.h2 
-          className="text-center mb-8 font-greatVibes text-servicesHeading text-6xl md:text-7xl relative inline-block after:content-[''] after:absolute after:bottom-[-10px] after:left-1/2 after:-translate-x-1/2 after:w-[60px] after:h-[3px] after:bg-servicesUnderline after:rounded"
+          className="text-center font-bold font-playfair-display italic text-5xl text-blue-800 mb-2"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
           Our Services
         </motion.h2>
+        <h3 className="text-center font-bold font-playfair-display text-5xl text-blue-800 mt-2 mb-12 relative">
+          
+          <span className="mt-5 block h-1 w-28 bg-secondary rounded mx-auto mb-2" />
+        </h3>
 
         <div className="flex justify-center">
           <motion.div

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; // eslint-disable-next-line no-unused-vars
 import firstImg from "../images/first.jpg";
 import secondImg from "../images/second.jpg";
 import thirdImg from "../images/third.jpg";

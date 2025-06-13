@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; // eslint-disable-next-line no-unused-vars
 import bgPattern from "../images/background.png";
 import bigOne from "../images/big_one.jpg";
 import smallOne from "../images/small_one.jpg";
@@ -54,10 +54,10 @@ export default function AboutUs() {
           className="w-full flex flex-col items-center mb-8"
           variants={fadeInVariants}
         >
-          <h2 className="text-5xl md:text-6xl font-extrabold italic text-primary mb-2 text-center tracking-wide font-montserrat">
+          <h2 className="text-center font-bold font-playfair-display italic text-5xl text-blue-800">
             About <span className="ml-2">Us</span>
           </h2>
-          <span className="block h-1 w-28 bg-secondary rounded mx-auto mb-2" />
+          <span className="mt-5 block h-1 w-28 bg-secondary rounded mx-auto mb-2" />
         </motion.div>
         {/* Main Content Row */}
         <div className="w-full flex flex-col md:flex-row items-center gap-10">

@@ -54,7 +54,7 @@ export default function AboutUs() {
           className="w-full flex flex-col items-center mb-8"
           variants={fadeInVariants}
         >
-          <h2 className="text-center font-bold font-playfair-display italic text-5xl text-blue-800">
+          <h2 className="font-polysans italic font-medium text-[42px] leading-[56px] tracking-[0.38px] text-center align-middle font-playfair-display text-[#0655A0] mb-2">
             About <span className="ml-2">Us</span>
           </h2>
           <span className="mt-5 block h-1 w-28 bg-secondary rounded mx-auto mb-2" />

@@ -76,7 +76,7 @@ export default function Resources() {
       {/* Heading Section */}
       <div className="w-full text-center mb-8 relative z-10">
         <motion.h2 
-          className="text-center font-bold font-playfair-display italic text-5xl text-blue-800 mb-2"
+          className="font-polysans italic font-medium text-[42px] leading-[56px] tracking-[0.38px] text-center align-middle font-playfair-display text-[#0655A0] mb-2"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}

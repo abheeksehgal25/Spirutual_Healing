@@ -4,9 +4,9 @@ const HappyClients = () => {
   return (
     <section id="happy-clients" className="py-16 bg-gradient-to-b from-purple-100 to-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-center font-bold font-playfair-display italic text-5xl text-blue-800">Happy Clients </h2>
-        <h3 className="text-center font-bold font-playfair-display text-5xl text-blue-800 mt-2 mb-12 relative">
-          Satisfaction ratings
+        <h2 className="font-polysans italic font-medium text-[42px] leading-[56px] tracking-[0.38px] text-center align-middle font-playfair-display text-[#0655A0] mb-2">Happy Clients Satisfaction ratings </h2>
+        <h3 className="font-polysans italic font-medium text-[42px] leading-[56px] tracking-[0.38px] text-center align-middle font-playfair-display text-[#0655A0] mb-2">
+          
           <span className="mt-5 block h-1 w-28 bg-secondary rounded mx-auto mb-2" />
         </h3>
 

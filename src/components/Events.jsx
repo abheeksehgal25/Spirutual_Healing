@@ -50,14 +50,14 @@ export default function Events() {
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         {/* Heading Section */}
         <motion.h2 
-          className="text-center font-bold font-playfair-display italic text-5xl text-blue-800 mb-2"
+          className="font-polysans italic font-medium text-[42px] leading-[56px] tracking-[0.38px] text-center align-middle font-playfair-display text-[#0655A0] mb-2"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
           Events
         </motion.h2>
-        <h3 className="text-center font-bold font-playfair-display text-5xl text-blue-800 mt-2 mb-12 relative">
+        <h3 className="font-polysans italic font-normal text-[42px] leading-[56px] tracking-[0.38px] text-center align-middle font-playfair-display text-5xl text-[#0655A0] mt-2 mb-12 relative">
           
           <span className="mt-5 block h-1 w-28 bg-secondary rounded mx-auto mb-2" />
         </h3>
@@ -72,16 +72,20 @@ export default function Events() {
           {eventsData.map((event, index) => (
             <motion.div
               key={index}
-              className="bg-white rounded-xl shadow-md p-4 flex items-center border border-gray-100 transition-all duration-300 hover:shadow-lg"
+              className={`rounded-xl shadow-md p-4 flex items-center border border-gray-100 transition-all duration-300 hover:shadow-lg ${
+                index % 2 === 0 ? 'bg-[#9EE3E370]' : 'bg-white'
+              }`}
               variants={itemVariants}
             >
-              <div className="flex-shrink-0 text-center bg-eventCardBackground p-3 rounded-lg mr-4 w-20">
-                <p className="text-sm font-semibold text-gray-700">{event.month}</p>
-                <p className="text-2xl font-bold text-dark">{event.day}</p>
+              <div className={`flex-shrink-0 text-center p-3 rounded-lg mr-4 w-20 ${
+                index % 2 === 0 ? 'bg-white' : 'bg-[#9EE3E370]'
+              }`}>
+                <p className="font-inter font-medium text-[21.3px] leading-[21.3px] tracking-normal align-middle">{event.month}</p>
+                <p className="font-inter font-medium text-[31.94px] leading-[12.17px] tracking-normal text-center align-middle mt-3">{event.day}</p>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-dark mb-1">{event.title}</h3>
-                <p className="text-gray-600 text-sm">{event.description}</p>
+                <h3 className="font-urbanist font-medium text-[15.97px] leading-[14.2px] tracking-[0.03em] align-middle mb-1">{event.title}</h3>
+                <p className="font-urbanist font-light text-[11.98px] leading-[12.17px] tracking-normal align-middle">{event.description}</p>
               </div>
             </motion.div>
           ))}

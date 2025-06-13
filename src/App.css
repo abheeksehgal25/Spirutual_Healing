@@ -182,6 +182,12 @@ body {
 }
 
 /* Responsive Adjustments */
+@media (max-width: 767px) {
+  .footer-section-mobile-left {
+    text-align: left !important;
+  }
+}
+
 @media (max-width: 768px) {
   .service-card,
   .testimonial-card,

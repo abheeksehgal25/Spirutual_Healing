@@ -49,7 +49,7 @@ export default function Services() {
     <section id="services" className="bg-white py-12">
       <div className="max-w-screen-xl mx-auto px-4">
         <motion.h2 
-          className="text-center font-bold font-playfair-display italic text-5xl text-blue-800 mb-2"
+          className="font-polysans italic font-medium text-[42px] leading-[56px] tracking-[0.38px] text-center align-middle font-playfair-display text-[#0655A0] mb-2"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
